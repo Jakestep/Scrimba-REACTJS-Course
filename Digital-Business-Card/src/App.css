@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  color: black;
+}
+
+#picture {
+  width: 200px;
+  height: fit-content;
+  position: relative;
+  align-self: center;
+}
+
+#container {
+  border: 5px dotted hotpink;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  height: 300px;
+  width: 525px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#info {
+  max-height: 300px;
+}
