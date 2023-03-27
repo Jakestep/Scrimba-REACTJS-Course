@@ -1,17 +1,18 @@
-import ReactLogo from './images/react-logo.png';
+import logo from './images/react-logo.png'
 
-function Navbar() {
+
+export default function Navbar() {
     return (
-        <nav id='navbar'>
-            <div id='nav-left-container'>
-                <img src={ReactLogo} alt='React Logo' id='react-logo'/>
-                <h1>ReactFacts</h1>
+        <>
+        <div id='navbar'>
+            <div id='navbar-left'>
+                <img src={logo} alt='react logo' id='react-logo-nav'></img>
+                <h2 id='logotext'>ReactFacts</h2>
             </div>
-            <h1 id='nav-right-el'>
-                React Course - Project 1
-            </h1>
-        </nav>
+            <div id='navbar-right'>
+                <h3>React Course - Project 1</h3>
+            </div>
+        </div>
+        </>
     )
 }
-
-export default Navbar

@@ -1,11 +1,11 @@
+import Main from './components/Main.jsx';
+import Navbar from './components/Navbar.jsx';
 import './App.css';
-import React from 'react';
-import Navbar from './components/Navbar';
-import Main from './components/Main';
+
 
 
 function App() {
-    return (
+    return(
         <>
             <Navbar />
             <Main />
@@ -13,5 +13,4 @@ function App() {
     )
 }
 
-export default App;
-
+export default App
