@@ -1,17 +1,19 @@
 body {
   margin: 0;
   color: black;
+  font-family: 'Noto Serif', serif;
 }
 
 #picture {
   width: 200px;
   height: fit-content;
   position: relative;
-  align-self: center;
+  align-self: top;
+  margin: 5px 10px 5px 5px;
+  border-radius: 10%;
 }
 
-#container {
-  border: 5px dotted hotpink;
+.container {
   display: flex;
   align-items: start;
   justify-content: space-evenly;
@@ -23,8 +25,61 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  box-shadow: inset 0 0 10px 7px black;
 }
 
-#info {
+.info {
   max-height: 300px;
+}
+
+.stuff-in-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-height: 300px;
+  max-width: 525px;
+}
+
+.top-section {
+  display: flex;
+
+}
+
+#name {
+  font-size: 30px;
+  margin: 0;
+}
+
+#contact-info {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.objectives_container > h3 {
+  font-size: 20px;
+  padding: 0;
+  margin: 7px 0 0 0;
+}
+
+.objectives_container > ul {
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+
+.objectives_container > ul > li::marker {
+  content: '֎';
+}
+
+.objectives_container > ul {
+  line-height: 25px;
+}
+
+.objectives_container > ul > li {
+  padding-left: 10px;
+}
+
+.bottom-section {
+  text-align: center;
 }

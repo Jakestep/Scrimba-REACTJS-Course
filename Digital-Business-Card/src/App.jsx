@@ -1,14 +1,16 @@
-import './App.css'
-import picture from './assets/picture.jpg'
+import './App.css';
+import TopSection from './components/TopSection.jsx';
+import BottomSection from './components/BottomSection.jsx';
+
+
 
 function App() {
 
   return (
-    <div id='container'>
-      <img src={picture} id='picture'/>
-      <div id='info'>
-        <h1>Jacob Estep</h1>
-        <p>Beginner something or other</p>
+    <div className='container'>
+      <div className='stuff-in-card'>
+        <TopSection />
+        <BottomSection />
       </div>
     </div>
   )
