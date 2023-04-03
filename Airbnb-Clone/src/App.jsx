@@ -8,12 +8,14 @@ import cardData from './data';
 function App() {
   const cardElements = cardData.map(data => {
     return <Card
+        key={data.id}
         img={data.coverImg}
         rating={data.stats.rating}
         reviewCount={data.reviewCount}
         location={data.location}
         price={data.price}
         title={data.title}
+        openSpots={data.openSpots}
       />})
   return (
     <div>

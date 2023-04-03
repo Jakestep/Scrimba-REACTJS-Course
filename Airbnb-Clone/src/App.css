@@ -92,6 +92,20 @@ nav {
   width: 176px;
   height: 235px;
   border-radius: 10%;
+  position: relative;
+}
+
+.card--badge {
+  position: absolute;
+  z-index: 1;
+  left: auto;
+  top: auto;
+  background-color: red;
+  width: fit-content;
+  padding: 2px;
+  margin: 10px 15px;
+  border-radius: 5px;
+  color: white;
 }
 
 /* CARD GROUP */

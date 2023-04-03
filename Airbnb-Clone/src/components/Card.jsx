@@ -1,6 +1,17 @@
 export default function Card(props) {
+
+    let badgeText
+    if(props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if(props.openSpots > 0 && props.openSpots <= 10) {
+        badgeText = `SPOTS LEFT: ${props.openSpots}`
+    } else if (props.location === "Online") {
+        badgeText = 'ONLINE'
+    }
+
     return (
         <div className='card-block'>
+            {badgeText && <div className='card--badge'>{badgeText}</div>}
             <img src={`/assets/images/${props.img}`} className='card--image'/>
             <div>
                 <div className='card--stats-block'>
