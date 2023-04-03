@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.light {
+  opacity: .6;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 15px;
+  box-shadow: 0 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+#nav--logo {
+  padding: 5px;
+  max-width: 100px;
+}
+
+#hero--photo-grid {
+  width: calc(0.72*100vw);
+  max-width: 400px;
+  margin-top: 26px;
+}
+
+.hero--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero--container--text > h1{
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.hero--container--text > p{
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  color: #222222;
+  width: 320px;
+  height: 56px;
+}
+
+.hero--container--text {
+  align-self: start;
+  margin-left: 36px;
+}
+
+/* CARD */
+
+.card-block {
+  margin: 0 20px;
+}
+
+.card--stats-block {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  padding: 0;
+
+}
+
+.card--stats {
+  padding-left: 3px;
+  margin: 0;
+}
+
+.card--title {
+  margin: 0;
+  margin: 4px 0;
+}
+
+.card--price {
+  margin: 0;
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+.card--image {
+  width: 176px;
+  height: 235px;
+  border-radius: 10%;
+}
+
+/* CARD GROUP */
+
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  overflow-x:auto;
+  gap: 20px;
+}
