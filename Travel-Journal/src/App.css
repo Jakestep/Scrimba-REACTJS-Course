@@ -22,7 +22,11 @@ body{
 
 .navbar {
   padding: 15px;
-  background: linear-gradient(to right, skyblue 0, skyblue 40% yellow 50%, yellow 100%);
+  z-index: 10;
+  /* background-color: black; */
+
+  background: linear-gradient(to right, skyblue 0, skyblue 50%, yellow 64%, gold 100%);
+  /* background-color: linear-gradient(to right, skyblue 0, skyblue 40% yellow 50%, yellow 100%); */
   display: flex;
   justify-content: center;
   align-items: center;
