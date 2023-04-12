@@ -1,0 +1,75 @@
+:root {
+  --background: linear-gradient(to right, #672280, #A626D3)
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+.header {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+  background: var(--background);
+  box-shadow: 0 0 10px 5px black;
+}
+
+.header--left {
+  display: flex;
+  align-items: center;
+}
+
+.header--trollface {
+  width: 50px;
+  height: fit-content;
+  transform: scalex(-1);
+  margin: 0 10px 0 0;
+}
+
+.header--title {
+  font-size: 1.5rem;
+  letter-spacing: -.07rem;
+}
+
+.header--right > h2 {
+  font-size: 1.25rem;
+  font-weight: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  width: 40%;
+  padding: .5rem;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: .5rem;
+  text-indent: .25rem;
+}
+
+.form--button {
+  font-family: "Karla", sans-serif;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 1.5rem;
+  letter-spacing: -.07rem;
+  background: var(--background);
+  padding: 1rem;
+  color: white;
+  border-radius: .5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.form--input-container {
+  display: flex;
+  justify-content: space-around;
+}
