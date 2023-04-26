@@ -10,7 +10,7 @@ export default function MemeForm() {
         bottomLineText: ''
     })
     
-    function getMemeImage() {
+    function getMemeImage(e) {
         const memeURL = Axios.get("https://meme-api.com/gimme").then(response => {
             if (response.data.nsfw) {
                 setData(prevData => (
@@ -18,7 +18,7 @@ export default function MemeForm() {
                         ...prevData,
                         memeImage: 'https://www.savingcountrymusic.com/wp-content/uploads/2014/05/carrie-underwood-miranda-lambert-something-bad.jpg'
                     }
-                ))            } else {
+                ))} else {
                 setData(prevData => (
                     {
                         ...prevData,
@@ -28,10 +28,8 @@ export default function MemeForm() {
             }
 
             })
-        
     }
     function handleChange(e) {
-        console.log(e)
         setData(prevData => (
             {
                 ...prevData,
