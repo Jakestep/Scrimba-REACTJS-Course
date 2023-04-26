@@ -39,6 +39,12 @@ body {
   font-weight: 500px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -72,4 +78,40 @@ body {
 .form--input-container {
   display: flex;
   justify-content: space-around;
+}
+
+.meme--container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.meme--image {
+  width: 100%;
+  align-self: center;
+  top: 0;
+}
+
+.meme--topline, .meme--bottomline {
+  color: black;
+  text-shadow: 0 0 3px whitesmoke;
+  font-family: inherit;
+  font-size: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.meme--topline {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -3%);
+  top: 3%;
+}
+
+.meme--bottomline {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translate(-50%, 3%);
 }
